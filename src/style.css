@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Roboto:ital,wght@0,300;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 1em;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Cambo", serif;
+  color: #141618;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-wrap: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #141618;
+}
+
+a:visited {
+  color: #141618;
+}
+
+.portrait {
+  font-size: 3em;
+  color: #f8f8f8;
+
+  margin: 0.3em;
+  padding-top: 8em;
+
+  background-color: #022c3f;
+  background-image: url("./images/portrait2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about_me_description {
+  max-width: 65ch;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.profile_links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 0.5em;
+  font-size: 1.5rem;
+}
+
+.my_work {
+  margin: 0 auto;
+}
+
+.project {
+  box-shadow: 5px 2px 7px 5px #adb5bd;
+  margin: 1rem;
+}
+
+.project_screenshot {
+  background-color: #022c3f;
+  color: #f8f8f8;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.project_header {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.project_header > ul {
+  display: flex;
+  gap: 1em;
+  margin-left: auto;
+}
+
+.project > p {
+  margin: 1em;
+  padding-bottom: 1em;
+}
+
+.contact_me {
+  background-color: #deb27e;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact_me > ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5rem;
+}
