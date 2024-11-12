@@ -29,8 +29,11 @@ h2 {
 
 img,
 svg {
-  display: block;
+  font-style: italic;
   max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: scale-down;
 }
 
 li {
@@ -46,17 +49,9 @@ a:visited {
   color: #141618;
 }
 
-.portrait {
-  font-size: 3em;
-  color: #f8f8f8;
-
-  margin: 0.3em;
-  padding-top: 8em;
-
-  background-color: #022c3f;
-  background-image: url("./images/portrait2.jpg");
-  background-size: cover;
-  background-position: center;
+.portrait_container > img{
+  padding: 0 1em;
+  margin: 0 auto;
 }
 
 .about_me_description {
@@ -109,7 +104,8 @@ a:visited {
 }
 
 .contact_me {
-  background-color: #deb27e;
+  background-color: #022c3f;
+  color: #f8f8f8;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -121,4 +117,22 @@ a:visited {
   justify-content: center;
   gap: 10px;
   font-size: 1.5rem;
+}
+
+@media (min-width: 470px) {
+  img {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 705px) {
+  img {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1084px) {
+  img {
+    max-width: 30%;
+  }
 }
