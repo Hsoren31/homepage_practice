@@ -49,6 +49,22 @@ h6 {
   text-wrap: balance;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(0, 0%, 0%);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
 .about_me {
   background: linear-gradient(
     165deg,
