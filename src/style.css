@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cambo&family=Roboto:ital,wght@0,300;1,300&display=swap");
 
 :root {
-  /* custom properties like colors */
+  --clr-dark-blue: hsl(199, 94%, 13%);
+  --clr-shadow: hsl(210, 11%, 71%);
+  --clr-text-white: hsl(0, 0%, 97%);
+  --clr-background-white: hsl(0, 0%, 100%);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -21,7 +26,13 @@ img {
   max-width: 100%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -29,15 +40,25 @@ p {
   text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 .about_me {
-  background: linear-gradient(165deg, #022c3f 50%, #8d8c8c 50%, #fff 51%);
+  background: linear-gradient(
+    165deg,
+    var(--clr-dark-blue) 50%,
+    var(--clr-shadow) 50%,
+    var(--clr-background-white) 51%
+  );
 }
 
-.portrait_container > img{
+.portrait_container > img {
   padding: 0 1em;
   margin: 0 auto;
 }
@@ -67,13 +88,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project {
-  box-shadow: 5px 2px 7px 5px #adb5bd;
+  box-shadow: 5px 2px 7px 5px var(--clr-shadow);
   margin: 1rem;
 }
 
 .project_screenshot {
-  background-color: #022c3f;
-  color: #f8f8f8;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-text-white);
   font-size: 2rem;
   text-align: center;
   padding: 2em 1em;
@@ -98,8 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact_me {
-  background-color: #022c3f;
-  color: #f8f8f8;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-text-white);
   padding: 1em;
   display: flex;
   flex-direction: column;
